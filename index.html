@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <main>
+       
+        <form class="app">
+            <div class="inputs">
+                <label for="in-currency">Montant</label>
+                <input class="inputs" type="text" name="from_amount" id="in-currency">
+            </div>
+            
+            <div class="from">
+                <p>De</p>
+                <select name="from_currency" class="from select" id="currencyFrom">
+                    <option value="EUR">Euro</option>
+                    <option value="USD">Dollar</option>
+                    <option value="GBP">Livre</option>
+                    <option value="JPY">Yen</option>
+                </select>
+            </div>
+            
+            <button><img class="icon" src="./assets/img/swap.png" alt=""></button>
+
+            <div class="to">
+                <p>Vers</p>
+
+                <select class="to select" name="to_currency" id="currencyTo">
+                    <option value="EUR">Euro</option>
+                    <option value="USD">Dollar</option>
+                    <option value="GBP">Livre</option>
+                    <option value="JPY">Yen</option>
+                </select>
+            </div>
+            <div class="exchange-result"></div>
+            <div class="exchange-rate"></div>
+
+            <button type="submit" class="submit">Convertir</button>
+        </form>
+        
+    </main>
+    <!-- <button id="btn">Cliquer</button> -->
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
