@@ -12,7 +12,7 @@
     --Text-color:hsl(0, 0%, 100%);
     --Body-color: hsl(0, 0%, 8%);
     --Contrast: hsl(357, 92%, 47%);
-    --Light-Grey:hsla(15, 4%, 20%, 0.142);
+    --Light-Grey:hsla(15, 4%, 20%, 0.874);
     --Black:hsl(0, 0%, 4%);
     --danger:#fe3f3c;
     --safe:	#74ee15;
@@ -37,15 +37,20 @@
 body{
   font-size: var(--fs-400);
   padding: 3rem;
-  background-color: var(--Text-color);
+  background-image:url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   color: var(--Text-color);
-
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: var(--ff-heading);
 }
-
+button i{
+    color: var(--Text-color);
+    font-size: var(--fs-500);
+}
 button, 
 input{
     appearance: none;
@@ -93,7 +98,6 @@ p{
 
 .app{
     background-color: var(--Body-color);
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,8 +105,8 @@ p{
     color: var(--Text-color);
     gap: 1rem;
     padding: var(--padding-m);
-    width: 20em;
-    height: 35em;
+    width: 17em;
+    height: 30em;
     border-radius: var(--b-radius);
     box-shadow: var(--shadow);
 
