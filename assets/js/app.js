@@ -58,7 +58,6 @@ swapIcon.addEventListener("click", ()=>{
     parseFloat(fromSelect);
     parseFloat(toSelect);
 
-
     let tempCurrency = fromSelect; // temporary currency code of FROM drop list
     fromSelect = toSelect; // passing TO currency code to FROM currency code
     toSelect = tempCurrency; // passing temporary currency code to TO currency code
